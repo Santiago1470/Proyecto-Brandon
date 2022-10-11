@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-overlay-color: transparent;
+    --bg-gradient: radial-gradient(circle at 52.5% 81.66666666666667%, #9E3B1B 0%, 20%, rgba(158,59,27,0) 40%), radial-gradient(circle at 6.503906249999999% 88.037109375%, rgba(253,235,201,0.99) 0%, 25%, rgba(253,235,201,0) 50%), radial-gradient(circle at 44.166666666666664% 13.333333333333334%, #ED6D5C 0%, 42%, rgba(237,109,92,0) 70%), radial-gradient(circle at 81.25% 50%, #9090C3 0%, 42%, rgba(144,144,195,0) 70%), radial-gradient(circle at 48.9013671875% 49.521484375%, #FFE001 0%, 100%, rgba(255,224,1,0) 100%);
+}
+
+header {
+    background-color: rgb(241, 112, 94);
+    padding-top: 4px;
+}
+
+.titulo-principal{
+    /*margin-top: 4px;*/
+    background-color: var(--bg-overlay-color);
+    background-image: var(--bg-gradient);
+    height: 83px;
+}
+
+.titulo-principal h3 a{
+    text-decoration: none;
+    color: black;
+}
+
+/* -------------------- SECCIÓN BARRA DE NAVEGACIÓN -------------------- */
+
+.barra-menu ul{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.barra-menu ul a{
+    color: black;
+    text-decoration: none;
+}
