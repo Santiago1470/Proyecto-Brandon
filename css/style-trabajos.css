@@ -8,5 +8,56 @@
     background-repeat: repeat;
     background-position: center;
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 50px;
+    padding: 30px 50px;
 }
 
+.trabajo1,
+.trabajo2,
+.trabajo3,
+.trabajo4 {
+    background-color: rgba(255, 223, 95, 0.582);
+    display: flex;
+    flex-direction: column;
+    padding: 25px 20px 12px 20px;
+    height: fit-content;
+}
+
+.trabajo1 h3,
+.trabajo2 h3,
+.trabajo3 h3,
+.trabajo4 h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.trabajo1 h3, .trabajo1 p,
+.trabajo2 h3, .trabajo2 p,
+.trabajo3 h3, .trabajo3 p,
+.trabajo4 h3, .trabajo4 p {
+    font-family: cormorantgaramond-semibold,cormorantgaramond,"cormorant garamond",serif;
+    color: rgb(68, 68, 68);
+    font-size: 1.1rem;
+}
+
+.trabajo1-boton,
+.trabajo2-boton,
+.trabajo3-boton,
+.trabajo4-boton {
+    padding-top: 10px;
+    text-align: right;
+}
+
+.trabajo1-boton input,
+.trabajo2-boton input,
+.trabajo3-boton input,
+.trabajo4-boton input {
+    width: 150px;
+    height: 35px;
+    background-color: rgb(173, 173, 173);
+    border: 3px double black;
+    color: rgb(85, 85, 85);
+    font-family: cormorantgaramond-semibold,cormorantgaramond,"cormorant garamond",serif;
+    font-size: 1.1rem;
+}
