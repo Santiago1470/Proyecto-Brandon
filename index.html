@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
-<html lang="es" />
+<html lang="es">
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,18 +10,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
     <title>Reescribiendo La Historia</title>
 </head>
 <body>
     <header>
         <div class="container-titulo-principal">
-            <h2><a href="#">REESCRIBIENDO LA HISTORIA</a></h2>
+            <h2><a href="index.html">REESCRIBIENDO LA HISTORIA</a></h2>
         </div>
         <!-- INICIO DE BARRA DE NAVEGACIÓN -->
         <nav class="barra-menu">
             <ul class="container-menu">
-                <li><a href="#">INICIO</a></li>
-                <li><a href="#">BOLETÍN INFORMATIVO</a></li>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="boletin.html">BOLETÍN INFORMATIVO</a></li>
                 <li><a href="#">TRABAJOS</a></li>
                 <li><a href="#">RUTAS DE AYUDA</a></li>
                 <li><a href="#">ENLACES DE AYUDAS</a></li>
@@ -89,7 +89,7 @@
         </div>
         <!-- FIN DE SECCIÓN DE TEXTO SOBRE HISTORIA DE COLOMBIA -->
     </section>
-    <footer class="footer-contacto">
+    <section class="seccion-contacto">
         <!-- INICIO DE SECCIÓN DE CONTACTO -->
         <div class="container-contacto-formulario">
             <form>
@@ -106,15 +106,15 @@
                         <input type="text" name="apellido" id="apellido">
                     </div>
                 </div>
-                <div>
-                    <div>
+                <div class="container-correo">
+                    <div class="label-correo">
                         <label for="correo">Email *</label>
                     </div>
-                    <div>
-                        <input type="email" name="correo" id="correo">
+                    <div class="input-correo">
+                        <input type="email" name="correo" id="correo" required>
                     </div>
                 </div>
-                <div>
+                <div class="container-texto-mensaje">
                     <div>
                         <label for="texto-mensaje">Escribe un mensaje</label>
                     </div>
@@ -122,12 +122,32 @@
                         <textarea name="texto-mensaje" id="texto-mensaje" cols="30" rows="10"></textarea>
                     </div>
                 </div>
-                <div>
+                <div class="container-boton">
                     <input type="submit" value="Enviar">
                 </div>
             </form>
         </div>
         <!-- FIN DE SECCIÓN DE CONTACTO -->
+    </section>
+    <footer>
+        <div class="container-contacto-personal">
+            <div class="contacto-personal-correo">
+                <div class="contacto-icono-correo">
+                    <img src="imagenes/icono-correo.png" alt="Logo de mensaje">
+                </div>
+                <div class="contacto-correo">
+                    <a href="mailto:bralesdapuentes@gmail.com">bralesdapuentes@gmail.com</a>
+                </div>
+            </div>
+            <div class="container-contacto-telefono">
+                <div class="contacto-icono-telefono">
+                    <img src="imagenes/icono-telefono.png" alt="Logo de un teléfono">
+                </div>
+                <div class="contacto-telefono">
+                    <a href="tel:3215026975">3215026975</a>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

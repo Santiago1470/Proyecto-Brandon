@@ -69,7 +69,70 @@ header {
     border-bottom: solid 1px rgb(255, 255, 255);
 }
 
+.container-menu li:active{
+    border: solid 1px rgb(255, 255, 255);
+    transition: all ease 600ms;
+}
+
 .container-menu a{
     color: black;
     text-decoration: none;
+}
+
+/* ------------------ SECCIÓN FOOTER ------------------ */
+
+footer{
+    background-color: rgba(231, 91, 73, 0.904);
+}
+
+.container-contacto-personal{
+    padding: 20px 70px 20px 70px;
+    display: flex;
+    flex-direction: row;
+    height: 55px;
+    gap: 40px;
+}
+
+.contacto-personal-correo,
+.container-contacto-telefono{
+    display: flex;
+    flex-direction: row;
+}
+
+.contacto-icono-correo{
+    border-radius: 50%;
+    width: 50px;
+    height: 40px;
+    background-color: rgb(134, 180, 224);
+    text-align: center;
+    padding-top: 7px;
+}
+
+.contacto-icono-correo img:hover,
+.contacto-icono-telefono img:hover{
+    transition: 900ms ease all;
+    transform: scale(0.93);
+}
+
+.contacto-correo{
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+.contacto-personal-correo a,
+.contacto-telefono a{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.container-contacto-telefono{
+    padding-top: 7px;
+}
+
+.contacto-telefono{
+    padding-top: 3px;
+    padding-left: 5px;
 }
