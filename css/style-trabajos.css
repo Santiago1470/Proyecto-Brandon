@@ -1,0 +1,12 @@
+
+/* ------------------ SECCIÓN INFORMACIÓN SOBRE TRABAJOS ------------------ */
+
+.seccion-trabajos{
+    height: 485px;
+    background-image: url(../imagenes/personas-juntas-en-un-lugar-pobre.png);
+    background-size: 400px;
+    background-repeat: repeat;
+    background-position: center;
+    display: grid;
+}
+

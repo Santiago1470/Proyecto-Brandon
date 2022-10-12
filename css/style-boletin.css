@@ -1,0 +1,23 @@
+
+/* ------------------ SECCIÓN BLOG ------------------ */
+
+.seccion-blog{
+    display: flex;
+    flex-direction: column;
+    padding: 0 130px;
+    text-align: center;
+    background-color: rgba(231, 91, 73, 0.904);
+}
+
+.container-titulo{
+    background-color: white;
+    padding: 15px 0;
+}
+
+.container-titulo h3{
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem;
+    color: rgba(231, 91, 73, 0.904);
+}

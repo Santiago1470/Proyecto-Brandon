@@ -19,6 +19,8 @@ body{
 header {
     background-color: rgba(231, 91, 73, 0.904);
     padding-top: 4px;
+    border-bottom: 0.1px solid rgba(41, 41, 41, 0.774);
+    box-shadow: 0 3px 5px 0 black;
 }
 
 .container-titulo-principal{
@@ -89,7 +91,7 @@ footer{
     padding: 20px 70px 20px 70px;
     display: flex;
     flex-direction: row;
-    height: 55px;
+    height: 40px;
     gap: 40px;
 }
 
@@ -101,17 +103,21 @@ footer{
 
 .contacto-icono-correo{
     border-radius: 50%;
-    width: 50px;
-    height: 40px;
+    width: 40px;
+    height: 30px;
     background-color: rgb(134, 180, 224);
     text-align: center;
-    padding-top: 7px;
+    padding-top: 8px;
+}
+
+.contacto-icono-correo img{
+    width: 25px;
 }
 
 .contacto-icono-correo img:hover,
 .contacto-icono-telefono img:hover{
-    transition: 900ms ease all;
-    transform: scale(0.93);
+    transition: 500ms ease all;
+    transform: scale(0.90);
 }
 
 .contacto-correo{
@@ -123,7 +129,7 @@ footer{
 .contacto-telefono a{
     color: white;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 500;
     text-decoration: none;
 }
@@ -135,4 +141,8 @@ footer{
 .contacto-telefono{
     padding-top: 3px;
     padding-left: 5px;
+}
+
+.contacto-icono-telefono img{
+    width: 25px;
 }

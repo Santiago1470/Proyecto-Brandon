@@ -7,7 +7,7 @@
 /* -------------------- SECCIÓN IMÁGENES -------------------- */
 
 .seccion-imagenes{
-    height: 1399px;
+    height: 1275px;
 }
 
 .container-imagen-principal{
@@ -190,7 +190,13 @@
     font-size: 0.95rem;
     background-color: black;
     border-radius: 25px 25px 25px 25px;
-    height: 43px;
+    height: 45px;
     width: 150px;
 }
 
+.container-boton input:hover{
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    transition: all ease 500ms;
+}
