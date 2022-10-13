@@ -9,8 +9,8 @@
     background-position: center;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px 50px;
-    padding: 30px 50px;
+    gap: 30px 70px;
+    padding: 30px 70px 20px 70px;
 }
 
 .trabajo1,
@@ -22,6 +22,7 @@
     flex-direction: column;
     padding: 25px 20px 12px 20px;
     height: fit-content;
+    box-shadow: 6px 6px 1px -0.9px rgb(255, 187, 0);
 }
 
 .trabajo1 h3,
@@ -61,3 +62,13 @@
     font-family: cormorantgaramond-semibold,cormorantgaramond,"cormorant garamond",serif;
     font-size: 1.1rem;
 }
+
+.trabajo1-boton input:hover,
+.trabajo2-boton input:hover,
+.trabajo3-boton input:hover,
+.trabajo4-boton input:hover {
+    background-color: black;
+    color: white;
+    transition: all ease 300ms;
+}
+

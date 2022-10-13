@@ -1,0 +1,79 @@
+
+.seccion-info-rutas{
+    background-color: rgb(233, 107, 90);
+    padding: 30px 60px 5px 60px;
+}
+
+.container-titulo{
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: cormorantgaramond-semibold,cormorantgaramond,"cormorant garamond",serif;
+    letter-spacing: 0.05em;
+    font-weight: 400;
+    color: rgb(39, 39, 39);
+    padding-bottom: 30px;
+}
+
+.container-titulo h3 span{
+    position: absolute;
+    right: 0;
+    width: 0;
+    height: 30px;
+    background-color: rgb(233, 107, 90);
+    animation: aparecer-texto 2s;
+    /*transition: all ease 800ms;*/
+}
+
+@keyframes aparecer-texto {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 0;
+    }
+}
+
+.container-info-descripcion{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-content: center;
+    justify-content: center;
+    padding: 0 40px 10px 40px;
+}
+
+.texto{
+    width: 250px;
+
+}
+
+.texto p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8rem;
+    color: rgb(39, 39, 39);
+}
+
+.imagen-ruta{
+    width: 310px;
+}
+
+.link-mas-info h5,
+.link-mas-info a{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: rgb(238, 233, 192);
+}
+
+.ruta-img{
+    padding-top: 10px;
+    text-align: center;
+}
+
+hr{
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgb(134, 180, 224);
+    border: none;
+    height: 0.1px;
+}
