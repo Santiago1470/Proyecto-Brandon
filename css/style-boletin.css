@@ -21,3 +21,12 @@
     font-size: 1.4rem;
     color: rgb(233, 107, 90);
 }
+
+.container-blog{
+    height: 600px;
+}
+
+.container-blog iframe{
+    width: 100%;
+    height: 100%;
+}
