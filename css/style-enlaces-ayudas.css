@@ -1,4 +1,11 @@
 
+body{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
 
 /* ------------------ SECCIÓN ENLACES DE AYUDA ------------------ */
 
@@ -10,7 +17,12 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding: 15px 150px;
+    padding: 15px 140px;
+}
+
+.sombra1{
+    box-shadow: 2px 2px 3px 1px rgb(172, 172, 172);
+    border-radius: 20%;
 }
 
 .enlace1,
@@ -22,7 +34,7 @@
     border: 2px solid rgb(95, 122, 145);
     border-radius: 20%;
     height: 40px;
-    box-shadow: 2px 2px 5px 1px rgb(160, 160, 160);
+    box-shadow: 2px 2px 3px 1px rgb(172, 172, 172) inset;
     padding: 5px 5px 5px 10px;
     display: flex;
     flex-direction: row;
@@ -32,22 +44,6 @@
 .texto{
     width: 100%;
 }
-
-.enlace1 a,
-.enlace2 a,
-.enlace3 a,
-.enlace4 a,
-.enlace5 a,
-.enlace6 a {
-    width: 125px;
-    border-radius: 25px 25px 25px 25px;
-    background-color: #808080;
-    height: 32px;
-    margin: auto 0;
-    color: black;
-    text-decoration: none;
-}
-
 
 .enlace1 p,
 .enlace2 p,
@@ -60,10 +56,84 @@
     font-weight: 550;
 }
 
+.enlace1 a,
+.enlace2 a,
+.enlace3 a,
+.enlace4 a,
+.enlace5 a,
+.enlace6 a {
+    width: 135px;
+    border-radius: 25px 25px 25px 25px;
+    background-color: #808080;
+    height: 32px;
+    margin: auto 0;
+    color: black;
+    text-decoration: none;
+}
+
+.enlace1 a:hover,
+.enlace2 a:hover,
+.enlace3 a:hover,
+.enlace4 a:hover,
+.enlace5 a:hover,
+.enlace6 a:hover {
+    background-color: rgb(63, 118, 82);
+    transition: all ease 500ms;
+}
+
+.link{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto 0;
+    padding-top: 3px;
+    gap: 1px;
+}
+
+.link:hover{
+    transform: scale(1.05);
+    gap: 4px;
+    color: white;
+    transition: all ease 500ms;
+}
+
+.link img,
+.link span{
+    margin: auto 0;
+}
+
+.icono-flecha-negra{
+    width: 25px;
+}
+
+.icono-flecha-blanca{
+    display: none;
+    width: 18px;
+    height: 25px;
+    padding-right: 3px;
+}
+/*
+.enlace1 a:hover > .icono-flecha-blanca,
+.enlace2 a:hover > .icono-flecha-blanca,
+.enlace3 a:hover > .icono-flecha-blanca,
+.enlace4 a:hover > .icono-flecha-blanca,
+.enlace5 a:hover > .icono-flecha-blanca,
+.enlace6 a:hover > .icono-flecha-blanca {
+    display: block;
+}*/
+
+.link span{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: lighter;
+    letter-spacing: 3px;
+}
+
 /* ------------------ SECCIÓN FOOTER ------------------ */
 
 footer{
     background-color: rgb(75,104,126) !important;
+    height: 100%;
 }
 
 .contacto-correo a{

@@ -1,0 +1,87 @@
+body{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* -------------------- SECCIÓN HISTORIAS -------------------- */
+
+.seccion-historias{
+    background-color: rgb(233, 107, 90);
+}
+
+.container-historias{
+    display: grid;
+    grid-template-columns: repeat(3, 248px);
+    gap: 10px;
+    padding: 20px 110px;
+    justify-content: center;
+}
+
+.contenedor-historia1 {
+    background-image: url(../imagenes/fondo-pies.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 235px;
+}
+
+.contenedor-historia2 {
+    background-image: url(../imagenes/fondo-mapa-colombia.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 235px;
+}
+
+.contenedor-historia1,
+.contenedor-historia2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    justify-content: center;
+    align-content: center;
+    transform: rotate(0deg);
+    transition: all ease 500ms;
+}
+
+.contenedor-historia1:hover,
+.contenedor-historia2:hover {
+    transform: rotate(2.5deg);
+    transition: all ease 500ms;
+}
+
+.img-titulo {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+    padding: 50px 20px 10px 20px;
+}
+
+.img-titulo img{
+    margin: 0 auto;
+    height: 48px;
+    width: 60px;
+}
+
+.img-titulo,
+.texto-historia{
+    height: 50%;
+}
+
+.texto-historia{
+    padding: 0 40px;
+}
+
+.texto-historia p{
+    font-size: 0.9rem;
+    font-weight: lighter;
+}
+
+
+/* -------------------- SECCIÓN FOOTER -------------------- */
+
+footer {
+    height: 100%;
+}
