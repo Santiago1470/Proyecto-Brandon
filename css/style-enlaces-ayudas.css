@@ -143,3 +143,50 @@ footer{
 .contacto-telefono a{
     color: rgb(255, 219, 159) !important;
 }
+
+/* -------------------- SECCIÓN MEDIA QUERIES -------------------- */
+
+@media screen and (max-width: 768px) {
+    .container-enlaces{
+        padding: 15px 80px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container-enlaces{
+        padding: 15px 30px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    
+    /* ------------------ SECCIÓN ENLACES DE AYUDA ------------------ */
+
+    .seccion-enlaces{
+        background-color: rgb(255, 219, 159);
+    }
+
+    .container-enlaces{
+        flex-direction: column;
+        padding: 15px 30px;
+    }
+
+    .enlace1,
+    .enlace2,
+    .enlace3,
+    .enlace4,
+    .enlace5,
+    .enlace6 {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .enlace1 a,
+    .enlace2 a,
+    .enlace3 a,
+    .enlace4 a,
+    .enlace5 a,
+    .enlace6 a {
+        margin: 0 auto;
+    }
+}

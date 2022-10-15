@@ -6,9 +6,7 @@
 
 /* -------------------- SECCIÓN IMÁGENES -------------------- */
 
-.seccion-imagenes{
-    height: 1275px;
-}
+
 
 .container-imagen-principal{
     width: 100%;
@@ -24,7 +22,6 @@
 .container-imagenes-grid{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    max-height: 420px;
 }
 
 .container-imagenes-grid div img{
@@ -161,7 +158,7 @@
     width: 441px;
 }
 
-/* -------------------- SECCIÓN CAMPO PARA ESCRIBIR MENSAJE -------------------- */
+/* ------------------ SECCIÓN CAMPO PARA ESCRIBIR MENSAJE ------------------ */
 
 .container-texto-mensaje{
     padding-top: 15px;
@@ -199,4 +196,120 @@
     background-color: white;
     color: black;
     transition: all ease 500ms;
+}
+
+
+/* -------------------- SECCIÓN MEDIA QUERIES -------------------- */
+
+@media screen and (max-width: 768px) {
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-imagen-principal img{
+        height: 400px;
+    }
+
+    .container-imagenes-grid{
+        grid-template-columns: repeat(2,1fr);
+        position: relative;
+    }
+    
+    .container-imagenes-grid div img{
+        width: 100%;
+        height: 400px;
+    }
+
+    .seccion-texto-historia{
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    /* ------------------ SECCIÓN IMÁGENES ------------------ */
+
+    .container-imagen-principal img{
+        height: 270px;
+    }
+
+    .container-imagenes-grid{
+        grid-template-columns: repeat(1,300px);
+        justify-content: center;
+        background-color: rgb(233, 107, 90);
+    }
+    
+    .container-imagenes-grid div img{
+        width: 100%;
+        height: 350px;
+    }
+
+    /* ------------------ SECCIÓN HISTORIA COLOMBIA ------------------ */
+
+    .seccion-texto-historia{
+        padding: 20px 20px;
+    }
+    
+    .container-texto-historia{
+        font-size: 1.1rem;
+    }
+    
+    .texto-historia-fuentes{
+        font-size: 0.9rem;
+    }
+
+    /* -------------------- SECCIÓN FORMULARIO -------------------- */
+
+    .container-contacto-formulario{
+        width: 95%;
+        padding: 10px 8px 10px 8px;
+        margin: 5px 0;
+        height: auto;
+    }   
+
+    .container-contacto-formulario form{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        justify-content: center;
+    }
+
+    /* -------------------- SECCIÓN TITULO DE FORMULARIO -------------------- */
+
+    .titulo-formulario h4{
+        font-size: 1.7rem;
+    }
+
+    /* ----------------- SECCIÓN CAMPO DE NOMBRE Y APELLIDO ----------------- */
+
+    .nombre-apellido{
+        flex-direction: column;
+        width: 100%;
+        height: 150px;
+    }
+
+    .nombre input,
+    .apellido input {
+        width: 100%;
+    }
+
+    .apellido{
+        padding-top: 10px;
+    }
+
+    /* ------------------ SECCIÓN CAMPO DE CORREO ------------------ */
+
+    .input-correo input{
+        width: 100%;
+    }
+
+    /* ------------------ SECCIÓN CAMPO PARA ESCRIBIR MENSAJE ------------------ */
+
+    .container-texto-mensaje div textarea{
+        padding-top: 15px;
+        padding-right: 10px;
+        height: 60px;
+        width: 100%;
+    }
 }

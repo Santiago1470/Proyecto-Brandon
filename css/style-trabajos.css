@@ -21,10 +21,7 @@ body{
     padding: 30px 70px 20px 70px;
 }
 
-.trabajo1,
-.trabajo2,
-.trabajo3,
-.trabajo4 {
+.trabajo {
     background-color: rgba(255, 223, 95, 0.582);
     display: flex;
     flex-direction: column;
@@ -33,35 +30,23 @@ body{
     box-shadow: 6px 6px 1px -0.9px rgb(255, 187, 0);
 }
 
-.trabajo1 h3,
-.trabajo2 h3,
-.trabajo3 h3,
-.trabajo4 h3 {
+.trabajo h3 {
     font-size: 1.1rem;
     font-weight: 500;
 }
 
-.trabajo1 h3, .trabajo1 p,
-.trabajo2 h3, .trabajo2 p,
-.trabajo3 h3, .trabajo3 p,
-.trabajo4 h3, .trabajo4 p {
+.trabajo h3, .trabajo p {
     font-family: cormorantgaramond-semibold,cormorantgaramond,"cormorant garamond",serif;
     color: rgb(68, 68, 68);
     font-size: 1.1rem;
 }
 
-.trabajo1-boton,
-.trabajo2-boton,
-.trabajo3-boton,
-.trabajo4-boton {
+.trabajo-boton {
     padding-top: 10px;
     text-align: right;
 }
 
-.trabajo1-boton input,
-.trabajo2-boton input,
-.trabajo3-boton input,
-.trabajo4-boton input {
+.trabajo-boton input {
     width: 150px;
     height: 35px;
     background-color: rgb(173, 173, 173);
@@ -71,16 +56,38 @@ body{
     font-size: 1.1rem;
 }
 
-.trabajo1-boton input:hover,
-.trabajo2-boton input:hover,
-.trabajo3-boton input:hover,
-.trabajo4-boton input:hover {
+.trabajo-boton input:hover {
     background-color: rgb(46, 46, 46);
     border: 3px double rgb(46, 46, 46);
     color: rgb(224, 224, 224);
     transition: all ease 300ms;
 }
 
+/* ------------------ SECCIÓN FOOTER ------------------ */
+
 footer{
     height: 100%;
+}
+
+/* -------------------- SECCIÓN MEDIA QUERIES -------------------- */
+
+@media screen and (max-width: 668px) {
+
+    /* ---------------- SECCIÓN INFORMACIÓN SOBRE TRABAJOS ---------------- */
+
+    .seccion-trabajos{
+        height: auto;
+        gap: 25px 40px;
+        padding: 25px 40px 20px 40px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    /* ---------------- SECCIÓN INFORMACIÓN SOBRE TRABAJOS ---------------- */
+
+    .seccion-trabajos {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 25px;
+        padding: 25px 20px 20px 20px;
+    }
 }

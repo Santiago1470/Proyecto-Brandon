@@ -24,14 +24,32 @@ body{
     padding-bottom: 30px;
 }
 
-.container-titulo h3 span{
+.span1 {
     position: absolute;
     right: 0;
     width: 0;
     height: 30px;
     background-color: rgb(233, 107, 90);
     animation: aparecer-texto 2s;
-    /*transition: all ease 800ms;*/
+}
+
+
+.span2 {
+    position: absolute;
+    right: 0;
+    width: 0;
+    height: 30px;
+    background-color: rgb(233, 107, 90);
+    animation: aparecer-texto 2s;
+}
+
+.span3 {
+    position: absolute;
+    right: 0;
+    width: 0;
+    height: 30px;
+    background-color: rgb(233, 107, 90);
+    animation: aparecer-texto 2s;
 }
 
 @keyframes aparecer-texto {
@@ -92,4 +110,60 @@ hr{
 
 footer{
     height: 100%;
+}
+
+/* -------------------- SECCIÓN MEDIA QUERIES -------------------- */
+
+@media screen and (max-width: 668px) {
+    .seccion-info-rutas {
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .seccion-info-rutas {
+        padding: 20px 30px;
+    }
+
+    .container-info-descripcion {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .texto{
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .texto p {
+        font-size: 0.9rem;
+    }
+
+    .imagen-ruta{
+        margin: 0 auto;
+        width: 270px;
+    }
+
+    .link-mas-info h5 {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .seccion-info-rutas {
+        padding: 10px 10px;
+    }
+
+    .container-info-descripcion {
+        padding: 0 20px 10px 20px;
+    }
+
+    .texto{
+        width: 100%;
+    }
+
+    .imagen-ruta {
+        width: 100%;
+    }
 }
