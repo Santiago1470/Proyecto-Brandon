@@ -112,15 +112,6 @@ body{
     height: 25px;
     padding-right: 3px;
 }
-/*
-.enlace1 a:hover > .icono-flecha-blanca,
-.enlace2 a:hover > .icono-flecha-blanca,
-.enlace3 a:hover > .icono-flecha-blanca,
-.enlace4 a:hover > .icono-flecha-blanca,
-.enlace5 a:hover > .icono-flecha-blanca,
-.enlace6 a:hover > .icono-flecha-blanca {
-    display: block;
-}*/
 
 .link span{
     font-family: 'Open Sans', sans-serif;
